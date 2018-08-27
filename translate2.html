@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-16" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharada Keyboard Demo</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+     @font-face {
+       font-family: sharada_font;
+       src: url(sharda.ttf);
+     }
+     body, html{
+       /* get rid of default spacing on the edges */
+    margin: 0;
+    padding: 0;
+
+    /* get rid of that 2px window border in Internet Explorer 6 */
+    border: 0;
+
+    /* fill the height of the browser */
+    height: 100%;
+
+    /* no more scroll bar */
+    overflow: hidden;
+     }
+
+    #text-area-1{
+       font-family: sharada_font;
+       height: 300px;
+     }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="jqkeyboard.js"></script>
+  <script src="jqk.layout.ka-en.js"></script>
+  <style type="text/css">
+    /* embed styles (todo problem with external css) */
+
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #8caba8;
+      height: auto;
+    }
+
+
+    input,
+    textarea {
+      background: #EEE;
+      color: #000;
+      font-size: 2em;
+      padding: 10px;
+      border: none;
+      margin-bottom: -6px;
+      width: 100%;
+    }
+
+    #fields {
+      position: relative;
+      width: 500px;
+      height: 400px;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+
+    #info-txt {
+      position: fixed;
+      bottom: 15px;
+      right: 100px;
+      font-weight: bold;
+      font-size: 17px;
+      color: #FFF;
+      display: none;
+    }
+
+    a {
+      color: #051EEF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #051EEF;
+    }
+    #fields {
+        height: 100vh;
+        width: 100vw;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-position: center top;
+    }
+    textarea{
+      border: 2px solid;
+      margin: 10px;
+    }
+    .myfooter{
+      height: 20px;
+      color: #000;
+      font-weight: bolder;
+      text-align: center;
+
+    }
+  </style>
+</head>
+
+<body>
+ 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-xs-12">
+          <p><b> Lal Vaakh in Hindi</b></p>
+          <textarea id="text-area-0" rows="05" cols="30" placeholder="Enter Text in Hindi"></textarea>
+        </div>
+
+        <div class="col-md-12 col-xs-12">
+          <p><b> Lal Vaakh in Sharda</b></p>
+          <textarea readonly id="text-area-1" rows="05" cols="30" placeholder="Output Text in Sharda"></textarea>
+        </div>
+      </div>
+      <a href="index.html">
+          <button class="btn btn-primary">
+            <-- Go Back
+          </button>
+        </a>
+    </div>
+
+  <script type="text/javascript">
+
+    $("#text-area-0").on('focus change input', function() {
+        $("#text-area-1").val($("#text-area-0").val())
+    });
+    
+  </script>
+</body>
+
+</html>
