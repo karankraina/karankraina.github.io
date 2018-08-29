@@ -1,11 +1,18 @@
 /*
     DEMO STYLE
 */
-
+ @font-face {
+       font-family: sharada_font;
+       src: url(NotoSansSharada-Regular.ttf);
+     }
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
+}
+#brnd{
+	font-family: sharada_font;
+	
 }
 
 p {
