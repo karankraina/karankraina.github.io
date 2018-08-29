@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style3.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <h3>Core Sharda Team</h3>
+            </div>
+			<h4>Lal Vaakh</h4>
+			<input class="form-control" id="myInput" type="text" placeholder="Enter Vaakh no">
+            <ul class="list-unstyled components" id="myList">
+                
+				
+                <li>
+                    <a href="#">Vaakh 01</a>
+                </li>
+				<li>
+                    <a href="#">Vaakh 02</a>
+                </li>
+				<li>
+                    <a href="#">Vaakh 03</a>
+                </li>
+				<li>
+                    <a href="#">Vaakh 04</a>
+                </li>
+				<li>
+                    <a href="#">Vaakh 05</a>
+                </li>
+				<li>
+                    <a href="#">Vaakh 06</a>
+                </li>
+				<li>
+                    <a href="#">Vaakh 07</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://play.google.com/store/apps/details?id=com.karan.raina.sharda.sharda" class="download">Download App</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-light bg-light fixed-top">
+                
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+                    </button>
+                    
+				<a class="navbar-brand" href="#">Jai Sharda Mata</a>
+                    
+
+            </nav>
+		<!-------------------Navbar Ended--------------->
+		
+		<div class="container-fluid" id="mycaro">
+		<h3>Vaakh #01</h3>
+			<div class="row">
+				<div class="col-sm-12 mb-4">
+					<div id="demo" class="carousel slide" data-ride="carousel">
+
+					  <!-- Indicators -->
+					  <ul class="carousel-indicators">
+						<li data-target="#demo" data-slide-to="0" class="active"></li>
+						<li data-target="#demo" data-slide-to="1"></li>
+					  </ul>
+					  
+					  <!-- The slideshow -->
+					  <div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="card bg-default">
+								<div class="card-body"><img class="img-responsive" src="assets/demo.jpg" alt="Hindi" width="1100" height="500"></div>
+								<div class="card-footer">Sharda</div>
+							</div>						  
+						</div>
+						<div class="carousel-item">
+						  <div class="card bg-default">
+								<div class="card-body"><img src="assets/demo.jpg" alt="Hindi" width="1100" height="500"></div>
+								<div class="card-footer">Hindi</div>
+							</div>
+						</div>
+						
+					  </div>
+					  
+					  <!-- Left and right controls -->
+					  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					  </a>
+					  <a class="carousel-control-next" href="#demo" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					  </a>
+					</div><!----Caro ended-------->
+				</div><!----col ended-------->
+				<div class="col-sm-12 mb-4">
+					<div class="card bg-default">
+						<div class="card-header">English Transliteration</div>
+						<div class="card-body">LoremIpsnj hasgfj ghajgha vgfa gav a f hgafa gva hgafg gahdg hgdvfha agdag hahg  a dgfahdvg</div>
+					</div>
+				</div><!----col ended-------->
+				<div class="col-sm-12 mb-4">
+					<div class="card bg-default">
+						<div class="card-header">Word Meaning</div>
+						<div class="card-body">BOdy</div>
+					</div>
+				</div><!----col ended-------->
+				<div class="col-sm-12 mb-4">
+					<div class="card bg-default">
+						<div class="card-header">Summary</div>
+						<div class="card-body">BOdy</div>
+					</div>
+				</div><!----col ended-------->
+			</div><!----row ended-------->
+		</div>	<!----container-fluid ended-------->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+        <!------------------Javascript Started--------------------------->    
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+		
+		$(document).ready(function(){
+		  $("#myInput").on("keyup", function() {
+			var value = $(this).val().toLowerCase();
+			$("#myList li").filter(function() {
+			  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+			});
+		  });
+		});
+
+    </script>
+</body>
+
+</html>
