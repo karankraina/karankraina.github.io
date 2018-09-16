@@ -1,8 +1,4 @@
-$.fn.gotoAnchor = function (anchor) {
-    location.href = this.selector;
-}
 
-$('#1').gotoAnchor();
 
 $(document).ready(function () {
     $("#btn1").on("tap", function () {
@@ -26,7 +22,7 @@ $(document).ready(function () {
     $("#btn4").on("tap", function () {
         //alert("click working")
         // $("#btn1").removeClass("bounceIn").addClass("rollOut").on('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function (e) {
-            $("vadsa").gotoAnchor();
+            window.location.href = "aboutus.html"
         });
     // });
 });
